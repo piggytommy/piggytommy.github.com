@@ -4,7 +4,7 @@
   <title><![CDATA[还是叫我序猿吧]]></title>
   <link href="http://piggytommy.github.com/atom.xml" rel="self"/>
   <link href="http://piggytommy.github.com/"/>
-  <updated>2012-08-28T23:53:10+08:00</updated>
+  <updated>2012-08-29T13:56:32+08:00</updated>
   <id>http://piggytommy.github.com/</id>
   <author>
     <name><![CDATA[piggytommy]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[octopress配置问题记录]]></title>
+    <link href="http://piggytommy.github.com/blog/octopresspei-zhi-wen-ti-ji-lu.html/"/>
+    <updated>2012-08-29T13:55:00+08:00</updated>
+    <id>http://piggytommy.github.com/blog/octopresspei-zhi-wen-ti-ji-lu</id>
+    <content type="html"><![CDATA[<h4 id="relatedposts">related_posts配置问题</h4>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[新博客之旅]]></title>
@@ -33,7 +42,7 @@
 
 <p>写博客当然是想给别人看的，要不然不如写日记得了。 自己写写随笔什么的没有压力， 技术类的文章就要谨慎很多，否则害人害己，得不偿失。 为了对的起以后的读者们，我会用谨慎的态度对待每一篇博文。 </p>
 
-<p>最后还是分享我最喜欢的一句话和大家共勉： 面对现实，忠于理想。 </p>
+<p>最后还是分享我最喜欢的一句话和大家共勉： 面对现实，忠于理想。</p>
 
 ]]></content>
   </entry>

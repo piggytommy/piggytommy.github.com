@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: octopress | 还是叫我序猿吧]]></title>
+  <link href="http://piggytommy.github.com/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://piggytommy.github.com/"/>
+  <updated>2012-08-29T13:56:32+08:00</updated>
+  <id>http://piggytommy.github.com/</id>
+  <author>
+    <name><![CDATA[piggytommy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[octopress配置问题记录]]></title>
+    <link href="http://piggytommy.github.com/blog/octopresspei-zhi-wen-ti-ji-lu.html/"/>
+    <updated>2012-08-29T13:55:00+08:00</updated>
+    <id>http://piggytommy.github.com/blog/octopresspei-zhi-wen-ti-ji-lu</id>
+    <content type="html"><![CDATA[<h4 id="relatedposts">related_posts配置问题</h4>
+]]></content>
+  </entry>
+  
+</feed>
