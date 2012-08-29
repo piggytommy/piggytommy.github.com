@@ -169,6 +169,22 @@
 
 <p><strong>解决方法</strong>: 很鸡肋， <strong>出去抽根烟，等!</strong>.</p>
 
+<blockquote>
+  <h3 id="section-1">分类列表中文无法显示问题</h3>
+</blockquote>
+
+<p><strong>问题描述</strong>:  加入category_list_tag插件，用与右侧显示“分类列表”, 部署之后页面显示如下错误. </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Liquid error: incompatible encoding regexp match (ASCII-8BIT regexp with UTF-8 string)</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><strong>原因描述</strong>:  category_list_tag插件文件 category_list_tag.rb编码问题</p>
+
+<p><strong>解决方法</strong>: 在category_list_tag中添加编码注释 </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line"># encoding: utf-8</span></code></pre></td></tr></table></div></figure></notextile></div>
+
 </div>
 
 
