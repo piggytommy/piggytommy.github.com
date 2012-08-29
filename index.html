@@ -9,8 +9,14 @@
   <meta name="author" content="piggytommy">
 
   
-  <meta name="description" content="related_posts配置问题
-">
+  <meta name="description" content="这两天一直在倒腾Octopress博客，期间遇到了很多问题， 在此记录下来，希望对后来者有一定的作用。 related_posts配置问题
+作为octopress新手， 我搜索了一些老手的配置加入到了_config.xml中， 在运行rake generate时报错。 1
+2
+3
+4
+5
+6
+7 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -105,7 +111,57 @@
   </header>
 
 
-  <div class="entry-content"><h4 id="relatedposts">related_posts配置问题</h4>
+  <div class="entry-content"><p>这两天一直在倒腾Octopress博客，期间遇到了很多问题， 在此记录下来，希望对后来者有一定的作用。</p>
+
+<h2 id="relatedposts">related_posts配置问题</h2>
+<p>作为octopress新手， 我搜索了一些老手的配置加入到了_config.xml中， 在运行rake generate时报错。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Running the classifier... this could take a while.
+</span><span class="line">../Users/piggytommy/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/matrix.rb:930:in `block in inverse_from': Not Regular Matrix (ExceptionForMatrix::ErrNotRegular)
+</span><span class="line">  from /Users/piggytommy/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/matrix.rb:920:in `upto'
+</span><span class="line">  from /Users/piggytommy/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/matrix.rb:920:in `inverse_from'
+</span><span class="line">  from /Users/piggytommy/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/matrix.rb:912:in `inverse'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/classifier-1.3.3/lib/classifier/extensions/vector.rb:96:in `SV_decomp'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/classifier-1.3.3/lib/classifier/lsi.rb:282:in `build_reduced_matrix'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/classifier-1.3.3/lib/classifier/lsi.rb:136:in `build_index'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/classifier-1.3.3/lib/classifier/lsi.rb:65:in `add_item'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/post.rb:165:in `block in related_posts'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/post.rb:165:in `each'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/post.rb:165:in `related_posts'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/post.rb:185:in `render'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/site.rb:193:in `block in render'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/site.rb:192:in `each'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/site.rb:192:in `render'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/site.rb:40:in `process'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/bin/jekyll:250:in `&lt;top (required)&gt;'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/bin/jekyll:23:in `load'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/bin/jekyll:23:in `&lt;main&gt;'</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>粗略的从错误观察到是related_posts的问题， 进入_config.xml, 删除如下选项即可。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">lsi: ture</span></code></pre></td></tr></table></div></figure></notextile></div>
+
 </div>
   
   
