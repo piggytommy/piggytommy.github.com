@@ -4,7 +4,7 @@
   <title><![CDATA[还是叫我序猿吧]]></title>
   <link href="http://piggytommy.github.com/atom.xml" rel="self"/>
   <link href="http://piggytommy.github.com/"/>
-  <updated>2012-08-29T14:21:35+08:00</updated>
+  <updated>2012-08-29T15:35:26+08:00</updated>
   <id>http://piggytommy.github.com/</id>
   <author>
     <name><![CDATA[piggytommy]]></name>
@@ -20,8 +20,11 @@
     <id>http://piggytommy.github.com/blog/octopresspei-zhi-wen-ti-ji-lu</id>
     <content type="html"><![CDATA[<p>这两天一直在倒腾Octopress博客，期间遇到了很多问题， 在此记录下来，希望对后来者有一定的作用。</p>
 
-<h2 id="relatedposts">related_posts配置问题</h2>
-<p>作为octopress新手， 我搜索了一些老手的配置加入到了_config.xml中， 在运行rake generate时报错。</p>
+<blockquote>
+  <h3 id="relatedposts">related_posts配置问题</h3>
+</blockquote>
+
+<p><strong>问题描述</strong>: 为octopress新手， 我搜索了一些老手的配置加入到了_config.xml中， 在运行rake generate时报错。</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -64,10 +67,20 @@
 </span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/bin/jekyll:23:in `load'
 </span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/bin/jekyll:23:in `&lt;main&gt;'</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>粗略的从错误观察到是related_posts的问题， 进入_config.xml, 删除如下选项即可。</p>
+<p><strong>解决方法:</strong> 粗略的从错误观察到是related_posts的问题， 进入_config.xml, 删除如下选项即可。</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td><td class="code"><pre><code class=""><span class="line">lsi: ture</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<blockquote>
+  <h3 id="section">部署延迟问题</h3>
+</blockquote>
+
+<p><strong>问题描述</strong>: 运行rake deploy之后刷新页面无法现实最新改动， 清除缓存，换浏览器，换电脑还是无法看到最新改动.</p>
+
+<p><strong>原因描述</strong>: github pages部署后存在一定的延迟， 该延迟不可控。</p>
+
+<p><strong>解决方法</strong>: 很鸡肋， <strong>出去抽根烟，等!</strong>.</p>
 
 ]]></content>
   </entry>
