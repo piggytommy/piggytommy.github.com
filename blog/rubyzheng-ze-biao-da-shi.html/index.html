@@ -5,11 +5,18 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>新博客之旅 - 还是叫我序猿吧</title>
+  <title>ruby正则表达式 - 还是叫我序猿吧</title>
   <meta name="author" content="piggytommy">
 
   
-  <meta name="description" content="不写博客的码农不是好码农 今天花了一整天的时间配置好了Octopress博客，申请了新的域名。 今天万网做活动， .com域名第一年55元， 姓名域名8元， 了于是毫不犹豫申请一个55的.com域名， 一个.cn姓名域名, 给自己写博客提供源动力。 从去年到现在一直在玩新浪微博， &hellip;">
+  <meta name="description" content="ruby正则表达式的使用一直是用的少，忘的快。把必要把常用的用法记录一下， 增强记忆力。 ruby正则表达式的建立 使用”//”建立 1
+/ruby/ 使用类方法建立 1
+Regexp.new(str) 使用”%r” 建立 1
+2
+3
+%r(ruby)
+%r&lt;ruby&gt;
+%r|ruby &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +25,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://piggytommy.github.com/blog/kai-shi-octopresszhi-lu.html/">
+  <link rel="canonical" href="http://piggytommy.github.com/blog/rubyzheng-ze-biao-da-shi.html/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -75,7 +82,7 @@
   <header>
     
       
-        <h1 class="entry-title">新博客之旅</h1>
+        <h1 class="entry-title">Ruby正则表达式</h1>
       
     
     
@@ -92,7 +99,7 @@
   
 
 
-<time datetime="2012-08-27T20:01:00+08:00" pubdate data-updated="true">2012-08-27 Mon</time>
+<time datetime="2012-08-30T13:24:00+08:00" pubdate data-updated="true">2012-08-30 Thu</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -101,23 +108,47 @@
   </header>
 
 
-<div class="entry-content"><blockquote>
-  <p>不写博客的码农不是好码农</p>
-</blockquote>
+<div class="entry-content"><p>ruby正则表达式的使用一直是用的少，忘的快。把必要把常用的用法记录一下， 增强记忆力。</p>
 
-<p>今天花了一整天的时间配置好了Octopress博客，申请了新的域名。 今天<a href="http://www.net.cn" target="_blank">万网</a>做活动， .com域名第一年55元， 姓名域名8元， 了于是毫不犹豫申请一个55的.com域名， 一个.cn姓名域名, 给自己写博客提供源动力。 </p>
-
-<p>从去年到现在一直在玩新浪微博，回头思考一下过去的日子才发现一年的微博对于自己来说什么都没有留下。 很少有人会去复习自己的微博。每条微博的内容，主题各不相同， 工作， 娱乐， 吐槽， 转发混为一体，没有什么质量可言。 对于大部分人来说就是加上好友互动的短新闻订阅器。反观博客， 去年一年我可怜的几篇博文还好好的躺在那里，虽然比较低端，属于记载类的博文， 却用到了好几次。 我去年发了300多条微博， 浏览的微博更是不计其数， 假如我把这么多的时间用来写博客的话，收获无疑是巨大的。 所以从今天开始，我要重拾博客生活， 写有质量的博文，做有理想的blogger。这个博客主要就两个内容:</p>
-
+<h3 id="ruby">ruby正则表达式的建立</h3>
 <ul>
-  <li>随笔： 主要写生活，工作中的感悟</li>
-  <li>技术： 对技术学习和实践的总结</li>
+  <li>使用”//”建立</li>
 </ul>
 
-<p>写博客当然是想给别人看的，要不然不如写日记得了。 自己写写随笔什么的没有压力， 技术类的文章就要谨慎很多，否则害人害己，得不偿失。 为了对的起以后的读者们，我会用谨慎的态度对待每一篇博文。 </p>
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="sr">/ruby/</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>最后还是分享我最喜欢的一句话和大家共勉： 面对现实，忠于理想。</p>
+<ul>
+  <li>使用类方法建立</li>
+</ul>
 
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="no">Regexp</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">str</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>使用”%r” 建立</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="sr">%r(ruby)</span>
+</span><span class="line"><span class="sr">%r&lt;ruby&gt;</span>
+</span><span class="line"><span class="sr">%r|ruby|</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="section">正则表达式的匹配</h3>
+<ul>
+  <li>使用”=~” 进行匹配</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="sr">/ruby/</span> <span class="o">=~</span> <span class="s2">&quot;i love ruby&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>匹配成功时返回匹配成功的起始位置， 不成功时返回nil</p>
 </div>
 
 
@@ -140,12 +171,12 @@
   
 
 
-<time datetime="2012-08-27T20:01:00+08:00" pubdate data-updated="true">2012-08-27 Mon</time>
+<time datetime="2012-08-30T13:24:00+08:00" pubdate data-updated="true">2012-08-30 Thu</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/随笔/'>随笔</a>
+    <a class='category' href='/blog/categories/ruby/'>ruby</a>
   
 </span>
 
@@ -161,8 +192,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left articlenav" href="/blog/octopresspei-zhi-wen-ti-ji-lu.html/" title="Previous Post: octopress配置问题记录">&laquo; octopress配置问题记录</a>
       
-        <a class="basic-alignment right articlenav" href="/blog/octopresspei-zhi-wen-ti-ji-lu.html/" title="Next Post: octopress配置问题记录">octopress配置问题记录 &raquo;</a>
       
     </p>
   </footer>
@@ -229,8 +260,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://piggytommy.github.com/blog/kai-shi-octopresszhi-lu.html/';
-        var disqus_url = 'http://piggytommy.github.com/blog/kai-shi-octopresszhi-lu.html/';
+        var disqus_identifier = 'http://piggytommy.github.com/blog/rubyzheng-ze-biao-da-shi.html/';
+        var disqus_url = 'http://piggytommy.github.com/blog/rubyzheng-ze-biao-da-shi.html/';
         var disqus_script = 'embed.js';
       
     (function () {

@@ -4,7 +4,7 @@
   <title><![CDATA[还是叫我序猿吧]]></title>
   <link href="http://piggytommy.github.com/atom.xml" rel="self"/>
   <link href="http://piggytommy.github.com/"/>
-  <updated>2012-08-30T09:35:52+08:00</updated>
+  <updated>2012-08-30T13:52:59+08:00</updated>
   <id>http://piggytommy.github.com/</id>
   <author>
     <name><![CDATA[piggytommy]]></name>
@@ -12,6 +12,55 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ruby正则表达式]]></title>
+    <link href="http://piggytommy.github.com/blog/rubyzheng-ze-biao-da-shi.html/"/>
+    <updated>2012-08-30T13:24:00+08:00</updated>
+    <id>http://piggytommy.github.com/blog/rubyzheng-ze-biao-da-shi</id>
+    <content type="html"><![CDATA[<p>ruby正则表达式的使用一直是用的少，忘的快。把必要把常用的用法记录一下， 增强记忆力。</p>
+
+<h3 id="ruby">ruby正则表达式的建立</h3>
+<ul>
+  <li>使用”//”建立</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="sr">/ruby/</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>使用类方法建立</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="no">Regexp</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">str</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>使用”%r” 建立</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="sr">%r(ruby)</span>
+</span><span class="line"><span class="sr">%r&lt;ruby&gt;</span>
+</span><span class="line"><span class="sr">%r|ruby|</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="section">正则表达式的匹配</h3>
+<ul>
+  <li>使用”=~” 进行匹配</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="sr">/ruby/</span> <span class="o">=~</span> <span class="s2">&quot;i love ruby&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>匹配成功时返回匹配成功的起始位置， 不成功时返回nil</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[octopress配置问题记录]]></title>
