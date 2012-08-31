@@ -231,6 +231,26 @@ Regexp.new(str) 使用”%r” 建立 1
 </span><span class="line"><span class="o">+</span><span class="p">?</span>       <span class="o">------</span><span class="err">出现</span><span class="mi">1</span><span class="err">次以上，但取最短的匹配结果</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
+<ul>
+  <li>正则表达式的选项</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="n">i</span>        <span class="o">------</span><span class="err">忽略英文大小写</span>
+</span><span class="line"><span class="n">s</span>        <span class="o">------</span><span class="no">Shift_JIS</span><span class="err">编码</span>
+</span><span class="line"><span class="n">e</span>        <span class="o">------</span><span class="no">EUC</span><span class="o">-</span><span class="no">JP</span><span class="err">编码</span>
+</span><span class="line"><span class="n">u</span>        <span class="o">------</span><span class="no">UTF</span><span class="o">-</span><span class="mi">8</span><span class="err">编码</span>
+</span><span class="line"><span class="n">n</span>        <span class="o">------</span><span class="err">不考虑文字编码</span>
+</span><span class="line"><span class="n">x</span>        <span class="o">------</span><span class="err">忽略正则表达式内部的空白，并忽略“</span><span class="c1">#”后面的内容。</span>
+</span><span class="line"><span class="n">m</span>        <span class="o">------</span><span class="err">多行匹配，</span> <span class="err">让</span><span class="s2">&quot;.&quot;</span><span class="err">能与换行符号进行匹配</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
 </div>
   
   
