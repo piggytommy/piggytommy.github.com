@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "还是叫我序猿吧"
+title: "请使用非IE浏览器访问此博客"
 comments: true
 sharing: true
 footer: true
