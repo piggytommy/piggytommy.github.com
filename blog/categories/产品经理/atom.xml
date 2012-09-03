@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[分类:产品经理 | 还是叫我序猿吧]]></title>
+  <link href="http://piggytommy.github.com/blog/categories/产品经理/atom.xml" rel="self"/>
+  <link href="http://piggytommy.github.com/"/>
+  <updated>2012-09-03T14:10:18+08:00</updated>
+  <id>http://piggytommy.github.com/</id>
+  <author>
+    <name><![CDATA[piggytommy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[yeelink网站结构图]]></title>
+    <link href="http://piggytommy.github.com/blog/yeelinkwang-zhan-jie-gou-tu.html/"/>
+    <updated>2012-09-03T14:07:00+08:00</updated>
+    <id>http://piggytommy.github.com/blog/yeelinkwang-zhan-jie-gou-tu</id>
+    <content type="html"><![CDATA[<p><img src="http://pic.yupoo.com/piggytommy/CeR5zTg5/1hnls.png"></p>
+]]></content>
+  </entry>
+  
+</feed>

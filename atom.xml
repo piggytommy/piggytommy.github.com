@@ -4,7 +4,7 @@
   <title><![CDATA[还是叫我序猿吧]]></title>
   <link href="http://piggytommy.github.com/atom.xml" rel="self"/>
   <link href="http://piggytommy.github.com/"/>
-  <updated>2012-09-03T01:19:34+08:00</updated>
+  <updated>2012-09-03T14:10:18+08:00</updated>
   <id>http://piggytommy.github.com/</id>
   <author>
     <name><![CDATA[piggytommy]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[yeelink网站结构图]]></title>
+    <link href="http://piggytommy.github.com/blog/yeelinkwang-zhan-jie-gou-tu.html/"/>
+    <updated>2012-09-03T14:07:00+08:00</updated>
+    <id>http://piggytommy.github.com/blog/yeelinkwang-zhan-jie-gou-tu</id>
+    <content type="html"><![CDATA[<p><img src="http://pic.yupoo.com/piggytommy/CeR5zTg5/1hnls.png" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[深夜年度小结]]></title>
