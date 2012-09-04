@@ -4,7 +4,7 @@
   <title><![CDATA[还是叫我序猿吧]]></title>
   <link href="http://piggytommy.github.com/atom.xml" rel="self"/>
   <link href="http://piggytommy.github.com/"/>
-  <updated>2012-09-03T14:10:18+08:00</updated>
+  <updated>2012-09-04T19:58:30+08:00</updated>
   <id>http://piggytommy.github.com/</id>
   <author>
     <name><![CDATA[piggytommy]]></name>
@@ -14,11 +14,20 @@
 
   
   <entry>
+    <title type="html"><![CDATA[yeelink网站对象分析]]></title>
+    <link href="http://piggytommy.github.com/blog/yeelinkwang-zhan-dui-xiang-fen-xi.html/"/>
+    <updated>2012-09-04T19:31:00+08:00</updated>
+    <id>http://piggytommy.github.com/blog/yeelinkwang-zhan-dui-xiang-fen-xi</id>
+    <content type="html"><![CDATA[<p><img src="http://pic.yupoo.com/piggytommy/Cf2G7rPp/M3wPr.png" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[yeelink网站结构图]]></title>
     <link href="http://piggytommy.github.com/blog/yeelinkwang-zhan-jie-gou-tu.html/"/>
     <updated>2012-09-03T14:07:00+08:00</updated>
     <id>http://piggytommy.github.com/blog/yeelinkwang-zhan-jie-gou-tu</id>
-    <content type="html"><![CDATA[<p><img src="http://pic.yupoo.com/piggytommy/CeR5zTg5/1hnls.png" /></p>
+    <content type="html"><![CDATA[<p><img src="http://pic.yupoo.com/piggytommy_v/Cf2PAJ1r/6rmKl.png" /></p>
 ]]></content>
   </entry>
   
