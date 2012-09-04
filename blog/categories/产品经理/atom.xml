@@ -4,7 +4,7 @@
   <title><![CDATA[分类:产品经理 | 还是叫我序猿吧]]></title>
   <link href="http://piggytommy.github.com/blog/categories/产品经理/atom.xml" rel="self"/>
   <link href="http://piggytommy.github.com/"/>
-  <updated>2012-09-04T20:02:36+08:00</updated>
+  <updated>2012-09-04T20:13:46+08:00</updated>
   <id>http://piggytommy.github.com/</id>
   <author>
     <name><![CDATA[piggytommy]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[yeelink对象关系图]]></title>
+    <link href="http://piggytommy.github.com/blog/yeelinkdui-xiang-guan-xi-tu.html/"/>
+    <updated>2012-09-04T20:12:00+08:00</updated>
+    <id>http://piggytommy.github.com/blog/yeelinkdui-xiang-guan-xi-tu</id>
+    <content type="html"><![CDATA[<p><img src="http://pic.yupoo.com/piggytommy_v/Cf2Xk0al/7iRTt.png"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[yeelink网站对象分析]]></title>
