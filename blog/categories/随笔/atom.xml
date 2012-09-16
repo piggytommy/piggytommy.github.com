@@ -4,7 +4,7 @@
   <title><![CDATA[分类:随笔 | 还是叫我序猿吧]]></title>
   <link href="http://piggytommy.github.com/blog/categories/随笔/atom.xml" rel="self"/>
   <link href="http://piggytommy.github.com/"/>
-  <updated>2012-09-10T14:19:14+08:00</updated>
+  <updated>2012-09-16T22:47:51+08:00</updated>
   <id>http://piggytommy.github.com/</id>
   <author>
     <name><![CDATA[piggytommy]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[我的一些毛病]]></title>
+    <link href="http://piggytommy.github.com/blog/wo-de-%5B%3F%5D-xie-mao-bing.html/"/>
+    <updated>2012-09-16T22:37:00+08:00</updated>
+    <id>http://piggytommy.github.com/blog/wo-de-[?]-xie-mao-bing</id>
+    <content type="html"><![CDATA[<p>我有很多缺点，其中有一些存在了很多年， 顽固的很。 今天把这些毛病一个个的列出来督促自己去修正。 </p>
+
+<ol>
+  <li>
+    <p>不及时接电话， 第一时间不回电话。
+具体表现： 比如我在打游戏的时候，有人打电话来，通常我会继续集中精力打游戏， 不去顾及电话， 甚至事后也不及时回复。 虽然我现在基本不怎么打游戏，
+这个毛病还是偶然发生。</p>
+  </li>
+  <li>不修边幅, 一屋不扫何以扫天下，不爱打扫房间， 衣服换洗的不勤快。</li>
+  <li>拖延。 很多事情到最后才去完成，质量可想而知。 </li>
+  <li>缺乏计划。 事情多的时候会像一头苍蝇。</li>
+  <li>逃避交流。 有些事情感觉争辩会很累就主动放弃交流，从而导致事情恶化。</li>
+</ol>
+
+<p>争取一个月改变一个坏习惯。 明天开始，一个月以后来博客复盘, 从接电话开始. </p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[闲话聪明&努力]]></title>
@@ -183,31 +206,6 @@
 
 <p>没脑子的人选择大于66.7， 普通人选择33， 比普通人多想一步的人选择22， 天才选择0. 参与人数各不相同，但最后的结果接近22. 当然我相信如果在google进行这个游戏，
 或者在一群数学家里面玩这个游戏结果会更加接近0. 不过这个游戏更有意义的启示在大众领域。</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[新博客之旅]]></title>
-    <link href="http://piggytommy.github.com/blog/kai-shi-octopresszhi-lu.html/"/>
-    <updated>2012-08-27T20:01:00+08:00</updated>
-    <id>http://piggytommy.github.com/blog/kai-shi-octopresszhi-lu</id>
-    <content type="html"><![CDATA[<blockquote>
-  <p>不写博客的码农不是好码农</p>
-</blockquote>
-
-<p>今天花了一整天的时间配置好了Octopress博客，申请了新的域名。 今天<a href="http://www.net.cn" target="_blank">万网</a>做活动， .com域名第一年55元， 姓名域名8元， 了于是毫不犹豫申请一个55的.com域名， 一个.cn姓名域名, 给自己写博客提供源动力。 </p>
-
-<p>从去年到现在一直在玩新浪微博，回头思考一下过去的日子才发现一年的微博对于自己来说什么都没有留下。 很少有人会去复习自己的微博。每条微博的内容，主题各不相同， 工作， 娱乐， 吐槽， 转发混为一体，没有什么质量可言。 对于大部分人来说就是加上好友互动的短新闻订阅器。反观博客， 去年一年我可怜的几篇博文还好好的躺在那里，虽然比较低端，属于记载类的博文， 却用到了好几次。 我去年发了300多条微博， 浏览的微博更是不计其数， 假如我把这么多的时间用来写博客的话，收获无疑是巨大的。 所以从今天开始，我要重拾博客生活， 写有质量的博文，做有理想的blogger。这个博客主要就两个内容:</p>
-
-<ul>
-  <li>随笔： 主要写生活，工作中的感悟</li>
-  <li>技术： 对技术学习和实践的总结</li>
-</ul>
-
-<p>写博客当然是想给别人看的，要不然不如写日记得了。 自己写写随笔什么的没有压力， 技术类的文章就要谨慎很多，否则害人害己，得不偿失。 为了对的起以后的读者们，我会用谨慎的态度对待每一篇博文。 </p>
-
-<p>最后还是分享我最喜欢的一句话和大家共勉： 面对现实，忠于理想。</p>
 
 ]]></content>
   </entry>
