@@ -86,7 +86,7 @@ disqus_short_name: piggytommy
 disqus_show_comment_count: true 
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-34701049-1
 
 # Facebook Like
 facebook_like: false
