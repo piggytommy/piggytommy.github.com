@@ -9,7 +9,11 @@
   <meta name="author" content="piggytommy">
 
   
-  <meta name="description" content="不写博客的码农不是好码农 今天花了一整天的时间配置好了Octopress博客，申请了新的域名。 今天万网做活动， .com域名第一年55元， 姓名域名8元， 了于是毫不犹豫申请一个55的.com域名， 一个.cn姓名域名, 给自己写博客提供源动力。 从去年到现在一直在玩新浪微博， &hellip;">
+  <meta name="description" content="这两天一直在倒腾Octopress博客，期间遇到了很多问题， 在此记录下来，希望对后来者有一定的作用。 related_posts配置问题 问题描述: 为octopress新手， 我搜索了一些老手的配置加入到了_config.xml中， 在运行rake generate时报错。 1
+2
+3
+4
+5 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -91,6 +95,125 @@
   <header>
     
       <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
+        <h1 class="entry-title"><a href="/blog/octopresspei-zhi-wen-ti-ji-lu.html/">Octopress配置问题记录</a></h1>
+      
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-29T13:55:00+08:00" pubdate data-updated="true">2012-08-29 Wed</time>
+        
+         | <a href="/blog/octopresspei-zhi-wen-ti-ji-lu.html/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>这两天一直在倒腾Octopress博客，期间遇到了很多问题， 在此记录下来，希望对后来者有一定的作用。</p>
+
+<blockquote>
+  <h3 id="relatedposts">related_posts配置问题</h3>
+</blockquote>
+
+<p><strong>问题描述</strong>: 为octopress新手， 我搜索了一些老手的配置加入到了_config.xml中， 在运行rake generate时报错。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Running the classifier... this could take a while.
+</span><span class="line">../Users/piggytommy/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/matrix.rb:930:in `block in inverse_from': Not Regular Matrix (ExceptionForMatrix::ErrNotRegular)
+</span><span class="line">  from /Users/piggytommy/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/matrix.rb:920:in `upto'
+</span><span class="line">  from /Users/piggytommy/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/matrix.rb:920:in `inverse_from'
+</span><span class="line">  from /Users/piggytommy/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/matrix.rb:912:in `inverse'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/classifier-1.3.3/lib/classifier/extensions/vector.rb:96:in `SV_decomp'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/classifier-1.3.3/lib/classifier/lsi.rb:282:in `build_reduced_matrix'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/classifier-1.3.3/lib/classifier/lsi.rb:136:in `build_index'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/classifier-1.3.3/lib/classifier/lsi.rb:65:in `add_item'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/post.rb:165:in `block in related_posts'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/post.rb:165:in `each'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/post.rb:165:in `related_posts'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/post.rb:185:in `render'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/site.rb:193:in `block in render'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/site.rb:192:in `each'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/site.rb:192:in `render'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/site.rb:40:in `process'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/bin/jekyll:250:in `&lt;top (required)&gt;'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/bin/jekyll:23:in `load'
+</span><span class="line">  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/bin/jekyll:23:in `&lt;main&gt;'</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><strong>解决方法:</strong> 粗略的从错误观察到是related_posts的问题， 进入_config.xml, 删除如下选项即可。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">lsi: ture</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<blockquote>
+  <h3 id="section">部署延迟问题</h3>
+</blockquote>
+
+<p><strong>问题描述</strong>: 运行rake deploy之后刷新页面无法现实最新改动， 清除缓存，换浏览器，换电脑还是无法看到最新改动.</p>
+
+<p><strong>原因描述</strong>: github pages部署后存在一定的延迟， 该延迟不可控。</p>
+
+<p><strong>解决方法</strong>: 很鸡肋， <strong>出去抽根烟，等!</strong>.</p>
+
+<blockquote>
+  <h3 id="section-1">分类列表中文无法显示问题</h3>
+</blockquote>
+
+<p><strong>问题描述</strong>:  加入category_list_tag插件，用与右侧显示“分类列表”, 部署之后页面显示如下错误. </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Liquid error: incompatible encoding regexp match (ASCII-8BIT regexp with UTF-8 string)</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><strong>原因描述</strong>:  category_list_tag插件文件 category_list_tag.rb编码问题</p>
+
+<p><strong>解决方法</strong>: 在category_list_tag中添加编码注释 </p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line"># encoding: utf-8</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
         <h1 class="entry-title"><a href="/blog/kai-shi-octopresszhi-lu.html/">新博客之旅</a></h1>
       
     
@@ -160,7 +283,7 @@
     <li class='category'><a href=' /blog/categories/octopress/'>octopress (1)</a></li>
 <li class='category'><a href=' /blog/categories/ruby/'>ruby (1)</a></li>
 <li class='category'><a href=' /blog/categories/产品经理/'>产品经理 (3)</a></li>
-<li class='category'><a href=' /blog/categories/随笔/'>随笔 (6)</a></li>
+<li class='category'><a href=' /blog/categories/随笔/'>随笔 (7)</a></li>
 
   </ul>
 </section>
@@ -168,6 +291,10 @@
 <section>
   <h1>近期文章</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/xie-gei-wo-ai-de-ni.html/">写给我爱的你</a>
+      </li>
     
       <li class="post">
         <a href="/blog/wo-de-%5B%3F%5D-xie-mao-bing.html/">我的一些毛病</a>
@@ -185,10 +312,6 @@
         <a href="/blog/yeelinkwang-zhan-dui-xiang-fen-xi.html/">yeelink网站对象分析</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/yeelinkwang-zhan-jie-gou-tu.html/">yeelink网站结构图</a>
-      </li>
-    
   </ul>
 </section>
 
@@ -198,7 +321,7 @@
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - piggytommy -
+  Copyright &copy; 2013 - piggytommy -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
