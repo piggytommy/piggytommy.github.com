@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[分类:octopress | 还是叫我序猿吧]]></title>
+  <link href="http://piggytommy.github.com/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://piggytommy.github.com/"/>
+  <updated>2013-02-25T21:44:19+08:00</updated>
+  <id>http://piggytommy.github.com/</id>
+  <author>
+    <name><![CDATA[piggytommy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[octopress配置问题记录]]></title>
+    <link href="http://piggytommy.github.com/blog/octopresspei-zhi-wen-ti-ji-lu.html/"/>
+    <updated>2012-08-29T13:55:00+08:00</updated>
+    <id>http://piggytommy.github.com/blog/octopresspei-zhi-wen-ti-ji-lu</id>
+    <content type="html"><![CDATA[<p>这两天一直在倒腾Octopress博客，期间遇到了很多问题， 在此记录下来，希望对后来者有一定的作用。</p>
+
+<blockquote>
+  <h3 id="relatedposts">related_posts配置问题</h3>
+</blockquote>
+
+<p><strong>问题描述</strong>: 为octopress新手， 我搜索了一些老手的配置加入到了_config.xml中， 在运行rake generate时报错。
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Running the classifier… this could take a while.
+</span><span class='line'>../Users/piggytommy/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/matrix.rb:930:in &lt;code>block in inverse_from': Not Regular Matrix (ExceptionForMatrix::ErrNotRegular)
+</span><span class='line'>  from /Users/piggytommy/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/matrix.rb:920:in &lt;/code>upto’
+</span><span class='line'>  from /Users/piggytommy/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/matrix.rb:920:in &lt;code>inverse_from'
+</span><span class='line'>  from /Users/piggytommy/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/matrix.rb:912:in &lt;/code>inverse’
+</span><span class='line'>  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/classifier-1.3.3/lib/classifier/extensions/vector.rb:96:in &lt;code>SV_decomp'
+</span><span class='line'>  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/classifier-1.3.3/lib/classifier/lsi.rb:282:in &lt;/code>build_reduced_matrix’
+</span><span class='line'>  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/classifier-1.3.3/lib/classifier/lsi.rb:136:in &lt;code>build_index'
+</span><span class='line'>  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/classifier-1.3.3/lib/classifier/lsi.rb:65:in &lt;/code>add_item’
+</span><span class='line'>  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/post.rb:165:in &lt;code>block in related_posts'
+</span><span class='line'>  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/post.rb:165:in &lt;/code>each’
+</span><span class='line'>  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/post.rb:165:in &lt;code>related_posts'
+</span><span class='line'>  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/post.rb:185:in &lt;/code>render’
+</span><span class='line'>  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/site.rb:193:in &lt;code>block in render'
+</span><span class='line'>  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/site.rb:192:in &lt;/code>each’
+</span><span class='line'>  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/site.rb:192:in &lt;code>render'
+</span><span class='line'>  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/lib/jekyll/site.rb:40:in &lt;/code>process’
+</span><span class='line'>  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/gems/jekyll-0.11.2/bin/jekyll:250:in &lt;code>&lt;top (required)&gt;'
+</span><span class='line'>  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/bin/jekyll:23:in &lt;/code>load’
+</span><span class='line'>  from /Users/piggytommy/.rvm/gems/ruby-1.9.3-p194/bin/jekyll:23:in `&lt;main>'</span></code></pre></td></tr></table></div></figure></notextile></div>
+**解决方法:** 粗略的从错误观察到是related_posts的问题， 进入_config.xml, 删除如下选项即可。</main></p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>lsi: ture</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<blockquote>
+  <h3 id="section">部署延迟问题</h3>
+</blockquote>
+
+<p><strong>问题描述</strong>: 运行rake deploy之后刷新页面无法现实最新改动， 清除缓存，换浏览器，换电脑还是无法看到最新改动.</p>
+
+<p><strong>原因描述</strong>: github pages部署后存在一定的延迟， 该延迟不可控。</p>
+
+<p><strong>解决方法</strong>: 很鸡肋， <strong>出去抽根烟，等!</strong>.</p>
+
+<blockquote>
+  <h3 id="section-1">分类列表中文无法显示问题</h3>
+</blockquote>
+
+<p><strong>问题描述</strong>:  加入category_list_tag插件，用与右侧显示“分类列表”, 部署之后页面显示如下错误. </p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Liquid error: incompatible encoding regexp match (ASCII-8BIT regexp with UTF-8 string)</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><strong>原因描述</strong>:  category_list_tag插件文件 category_list_tag.rb编码问题</p>
+
+<p><strong>解决方法</strong>: 在category_list_tag中添加编码注释 </p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># encoding: utf-8</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
+  
+</feed>

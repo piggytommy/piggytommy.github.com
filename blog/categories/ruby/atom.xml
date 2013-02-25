@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[分类:ruby | 还是叫我序猿吧]]></title>
+  <link href="http://piggytommy.github.com/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://piggytommy.github.com/"/>
+  <updated>2013-02-25T21:44:19+08:00</updated>
+  <id>http://piggytommy.github.com/</id>
+  <author>
+    <name><![CDATA[piggytommy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[ruby正则表达式]]></title>
+    <link href="http://piggytommy.github.com/blog/rubyzheng-ze-biao-da-shi.html/"/>
+    <updated>2012-08-30T13:24:00+08:00</updated>
+    <id>http://piggytommy.github.com/blog/rubyzheng-ze-biao-da-shi</id>
+    <content type="html"><![CDATA[<p>ruby正则表达式的使用一直是用的少，忘的快。把必要把常用的用法记录一下， 增强记忆力。</p>
+
+<h3 id="ruby">ruby正则表达式的建立</h3>
+<ul>
+  <li>
+    <p>使用”//”建立
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="sr">/ruby/</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+  </li>
+  <li>
+    <p>使用类方法建立</p>
+  </li>
+</ul>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Regexp</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">str</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+  <li>使用”%r” 建立
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="sr">%r(ruby)</span>
+</span><span class='line'><span class="sr">%r&lt;ruby&gt;</span>
+</span><span class='line'><span class="sr">%r|ruby|</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></ruby></li>
+</ul>
+
+<h3 id="section">正则表达式的匹配</h3>
+<ul>
+  <li>
+    <p>使用”=~” 进行匹配
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="sr">/ruby/</span> <span class="o">=~</span> <span class="err">“</span><span class="n">i</span> <span class="n">love</span> <span class="n">ruby</span><span class="err">”</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+匹配成功时返回匹配成功的起始位置， 不成功时返回nil</p>
+  </li>
+  <li>
+    <p>以一般文字进行匹配
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="sr">/ruby/</span> <span class="o">=~</span> <span class="err">“</span><span class="n">ruby</span> <span class="n">is</span> <span class="n">cool</span><span class="o">.</span><span class="err">”</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+以上代码只是单纯的匹配字符串里面是否包含相同的文字</p>
+  </li>
+  <li>
+    <p>匹配行尾和行首
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="sr">/^java$/</span> <span class="o">=~</span> <span class="err">“</span><span class="n">java</span><span class="err">”</span>                     <span class="c1">#匹配成功</span>
+</span><span class='line'><span class="sr">/^java$/</span> <span class="o">=~</span> <span class="err">“</span><span class="n">java</span> <span class="n">is</span> <span class="n">easy</span> <span class="n">to</span> <span class="n">learn</span><span class="o">.</span> <span class="err">“</span>  <span class="c1">#匹配失败</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+“^”和”$”是具有特殊意义的字符， 即转义字符(meta-character)</p>
+  </li>
+  <li>
+    <p>指定需要匹配成功的文字范围
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">[</span><span class="no">AB</span><span class="o">]</span>             <span class="err">—–</span><span class="n">A</span> <span class="err">或者</span> <span class="n">B</span>
+</span><span class='line'><span class="o">[</span><span class="n">a</span><span class="o">-</span><span class="n">z</span><span class="o">]</span>            <span class="err">—–</span><span class="n">a</span><span class="err">到</span><span class="n">z</span>
+</span><span class='line'><span class="o">[</span><span class="n">a</span><span class="o">-</span><span class="n">zA</span><span class="o">-</span><span class="n">z</span><span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;]</span>        <span class="err">—–所有英文字母与</span><span class="o">&lt;</span><span class="sr">/em&gt;(可用来匹配变量名) </span>
+</span><span class='line'><span class="sr">[^AB]            —–匹配A，B以外的内容</span>
+</span><span class='line'><span class="sr">[^A-Za-z]        —–匹配英文字母以外内容</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+  </li>
+  <li>
+    <p>匹配任意字符
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="sr">/ru.y/</span><span class="o">=~</span><span class="err">”</span><span class="n">ruby</span><span class="err">”</span>                 <span class="c1">#匹配成功</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+  </li>
+  <li>
+    <p>使用反斜杠的表达式
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">\</span><span class="n">s</span>       <span class="err">—–匹配空白（会与空白字符，</span> <span class="err">定位字符，换行字符，</span> <span class="err">换页字符匹配成功）</span>
+</span><span class='line'><span class="p">\</span><span class="n">d</span>       <span class="err">—–与</span><span class="mi">0</span><span class="o">~</span><span class="mi">9</span><span class="err">之间的数字匹配成功</span>
+</span><span class='line'><span class="p">\</span><span class="n">w</span>       <span class="err">—–与英文和数字匹配成功</span>
+</span><span class='line'><span class="p">\</span><span class="n">A</span>       <span class="err">—–与字符串前端匹配成功</span><span class="p">(</span><span class="err">注意与行首和行尾的区别</span><span class="p">)</span>
+</span><span class='line'><span class="p">\</span><span class="n">Z</span>       <span class="err">—–与字符串末端进行匹配</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+  </li>
+  <li>反复出现
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sr">/li&gt;</span>
+</span><span class='line'><span class="sr">  &lt;li&gt;——出现0次以上&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="err">——出现</span><span class="mi">1</span><span class="err">次以上</span>
+</span><span class='line'><span class="p">?</span>        <span class="err">——出现</span><span class="mi">0</span><span class="err">次或者</span><span class="mi">1</span><span class="err">次</span>
+</span><span class='line'><span class="o">*</span><span class="p">?</span>       <span class="err">——出现</span><span class="mi">0</span><span class="err">次以上，但取最短的匹配结果</span>
+</span><span class='line'><span class="o">+</span><span class="p">?</span>       <span class="err">——出现</span><span class="mi">1</span><span class="err">次以上，但取最短的匹配结果</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+  </li>
+  <li>正则表达式的选项
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">i</span>        <span class="err">——忽略英文大小写</span>
+</span><span class='line'><span class="n">s</span>        <span class="err">——</span><span class="no">Shift_JIS</span><span class="err">编码</span>
+</span><span class='line'><span class="n">e</span>        <span class="err">——</span><span class="no">EUC</span><span class="o">-</span><span class="no">JP</span><span class="err">编码</span>
+</span><span class='line'><span class="n">u</span>        <span class="err">——</span><span class="no">UTF</span><span class="o">-</span><span class="mi">8</span><span class="err">编码</span>
+</span><span class='line'><span class="n">n</span>        <span class="err">——不考虑文字编码</span>
+</span><span class='line'><span class="n">x</span>        <span class="err">——忽略正则表达式内部的空白，并忽略“</span><span class="c1">#”后面的内容。</span>
+</span><span class='line'><span class="n">m</span>        <span class="err">——多行匹配，</span> <span class="err">让”</span><span class="o">.</span><span class="err">”能与换行符号进行匹配</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></li>
+</ul>
+]]></content>
+  </entry>
+  
+</feed>
